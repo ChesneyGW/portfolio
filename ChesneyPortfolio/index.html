@@ -3,7 +3,7 @@
 <head>
  
   <title>Chesney Gordon-Williams - UX Designer - 🏀</title>
-  <meta name="viewport" content="width=320, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8"><!-- for Google -->
   <meta name="description" content="UX designer with a compulsion for open world concepts." />
   <meta name="keywords" content="UX designer, UX Designer, Anime Connoisseur, Photographer, Basketball lover 🏀" />
@@ -47,7 +47,7 @@
   }
 
 
-  h1 {
+  h6 {
     text-transform: uppercase;
     color:white;
     font-size:6em;
@@ -126,9 +126,10 @@
     border-radius: 0;
   }
   .thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
+    width: 85%;
+    height: 85%;
+    margin-bottom: 0px;
+    padding: 0px 5px;
   }
   .carousel-control.right, .carousel-control.left {
     background-image: none;
@@ -270,6 +271,13 @@
       font-size: 150px;
     }
   }
+  /* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -287,10 +295,18 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#proj1">PROJECT 1</a></li>
-        <li><a href="#proj2">PROJECT 2</a></li>
-        <li><a href="#proj3">PROJECT 3</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle" href="#proj1" data-toggle="dropdown">WORK</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#proj1"> MEET ME IN THE MIDDLE</a></li>
+              <li><a class="dropdown-item" href="#proj2"> UX CASE STUDY  </a></li>
+              <li><a class="dropdown-item" href="#proj3"> SNEAKER IMP</a></li>
+              <li><a class="dropdown-item" href="#proj4"> COVID-19 TRACKER </a></li>
+            </ul>
+            <li><a href="images/resume.PDF" target="_blank">RESUME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </li>
       </ul>
     </div>
   </div>
@@ -309,7 +325,7 @@
     <i></i>
     <i></i>
     <i></i>
-    <i></i>
+    <i></i> 
     <i></i>
     <i></i> 
     <i></i>
@@ -325,23 +341,54 @@
   </div>
 
 <div class="jumbotron text-center">
-  <a href="#about"><h1>Enter</h1></a>
+  <!-- <a href="#about"><h6>Enter</h6></a> -->
+  <div class="float-sm-left">
+  <h1>Hi, I'm Chesney!</h1><br>
+  <h3>I am a User Experience Researcher, Interface Designer & Developer with a love for open concepts, animation and technology.</h3><br>
+  <h3>For a lot of my design work I like to use Adobe XD, and when it comes to developing I enjoy using React JS and Bootstrap.</h3> 
+  <!-- <br><button class="btn btn-default btn-lg" onclick=" window.open('images/resume.PDF'); return true;"> Resume</button> -->
+  <div>
+  <a href="#proj1" title="To Work">
+    <span class="glyphicon glyphicon-chevron-down"></span>
+  </a>
+  </div>
+</div>
 </div>
 
-<!-- Container (About Section) -->
+<!-- Container (About Section)
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h2>About Me</h2><br>
-      <h4>Hi, I'm Chesney! I am a User Experience Researcher, Interface Designer & Developer with a love for open concepts, animation and technology.</h4><br>
-      <h4>For a lot of my design work I like to use Adobe XD, and when it comes to developing I enjoy using React JS and Bootstrap.</h4> -->
-      <br><button class="btn btn-default btn-sm" onclick=" window.open('images/resume.PDF'); return true;" > Resume</button>
+      <h1>Hi, I'm Chesney!</h1><br>
+      <h4>I am a User Experience Researcher, Interface Designer & Developer with a love for open concepts, animation and technology.</h4><br>
+      <h4>For a lot of my design work I like to use Adobe XD, and when it comes to developing I enjoy using React JS and Bootstrap.</h4> 
+      <br><button class="btn btn-default btn-lg" onclick=" window.open('images/resume.PDF'); return true;"> Resume</button>
     </div>
   </div>
-</div>
+</div> -->
+
+  <!-- Container (Project 1) -->
+  <div id="proj1" class="container-fluid">
+    <div class="row text-center slideanim">
+    <div class="col-md-4">
+      <h2>Meet Me in the Middle</h2>
+      <h4>Meet me in the Middle is a event and activity application that allow users to meet, create groups, 
+        go on excursions and purchase tickets right off the application. Made for IOS and Android platforms </h4>
+        <h4>Check out the prototype</h4>
+    <br><button class="btn btn-default btn-lg" onclick="window.open('https://xd.adobe.com/view/6a9695d2-6b4d-4711-64f6-4eab2a8ace73-1ca7/','_blank')">View</button><br><br>
+    <!-- <a href="https://xd.adobe.com/view/6a9695d2-6b4d-4711-64f6-4eab2a8ace73-1ca7/" target="_blank">The home page will open in another tab.</a> -->
+  </div>
+      <div class="col-md-8">
+        <div class="thumbnail">
+          <img src="images/mimgreen2.png" alt="app" width="300" height="200">
+        </div>
+      </div>
+  <br><br>
+  </div>
+  </div> 
 
   <!-- Container (Project 2) -->
-  <div id="proj1" class="container-fluid text-center bg-white">  
+  <div id="proj2" class="container-fluid text-center bg-white">  
     <div class="row text-center slideanim">
       <div class="col-md-8">
         <div class="thumbnail">
@@ -350,20 +397,22 @@
       </div>
     <div class="col-md-4">
       <h2>Physical Interface Redesign</h2>
-        <h4>Redesigning a vending a machine to be more intuitive and user friendly </h4>
-      <br><button class="btn btn-default btn-sm" onclick=" window.open('images/casestudy.PDF'); return true;">View</button>
+        <h4>Follow a user on thier journey as I redesign a vending a machine to be more intuitive and user friendly </h4>
+      <br><button class="btn btn-default btn-lg" onclick=" window.open('images/casestudy.PDF'); return true;">View</button>
     </div> 
   </div>
   </div>
   <br><br>
 
   <!-- Container (Project 3) -->
-<div id="proj2" class="container-fluid">
+<div id="proj3" class="container-fluid">
   <div class="row text-center slideanim">
   <div class="col-md-4">
     <h2>Made for the APPLE smart watch</h2>
+    <h4>Sneaker Imp is a smart watch application that gives 
+      users access to the newest, hottest footwear and fashion accessories & where to get them </h4>
       <h4>Check out the prototype</h4>
-    <br><button class="btn btn-default btn-sm" onclick="window.location.href = 'https://xd.adobe.com/view/822215d8-0215-44b6-77d0-6dd125fbdc11-f413/';">View</button><br><br>
+    <br><button class="btn btn-default btn-lg" onclick="window.open('https://xd.adobe.com/view/822215d8-0215-44b6-77d0-6dd125fbdc11-f413/','_blank')">View</button><br><br>
   </div>
     <div class="col-md-8">
       <div class="thumbnail">
@@ -374,7 +423,8 @@
 </div>
 </div>  
 
-<div id="proj3" class="container-fluid text-center bg-white">  
+<!-- Container (Project 4) -->
+<div id="proj4" class="container-fluid text-center bg-white">  
   <div class="row text-center slideanim">
     <div class="col-md-8">
       <div class="thumbnail">
@@ -383,8 +433,8 @@
     </div>
   <div class="col-md-4">
     <h2>COVID 19 TRACKER</h2>
-    <h4>Made with React JS and Chart JS</h4>
-  <br><button class="btn btn-default btn-sm">View</button><br><br>
+    <h4>These are trying times, this covid-19 tracker uses an API and gives real time information of people currently infected, amount of deaths, and recovered cases on the planet. Made with React JS and Chart JS.</h4>
+  <br><button class="btn btn-default btn-md">View</button><br><br>
   </div> 
 </div>
 

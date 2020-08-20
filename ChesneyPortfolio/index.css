@@ -6,8 +6,8 @@ body {background: #222;}
 
 #leaves i {
     display: inline-block;
-    width: 200px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     background: linear-gradient(to bottom right, #309900, #005600);
     transform: skew(20deg);
     border-radius: 5% 40% 70%;
@@ -39,7 +39,7 @@ body {background: #222;}
 
 #leaves i:after {
   content: '';
-  height: 125px;
+  height: 25px;
   width: 10px;
   background: linear-gradient(to right, rgba(0,0,0,.15), rgba(0,0,0,0));
   display: block;
@@ -136,3 +136,4 @@ body {background: #222;}
         opacity: 0;
     }
 }
+
